@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+
+:root{
+    --primaryWhite : white;
+    --primaryNav : rgb(245, 59, 90);
+    --primaryDark : rgb(255, 255, 255, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+/****NAVBAR***/
+
+/* LOGO */
+.logo{
+    width: 5.25rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Links */
+
+nav a.nav-link{
+    /* font-weight: 500; */
+    /* letter-spacing: 0.06rem; */
+    cursor: pointer;
+    /* color: wheat; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul li{
+    text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+
+.navbar-nav> li>a{
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+color: var(--primaryWhite) !important;
+border-top: 0.1875rem solid var(--primaryDark) ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand{
+max-width: 17.25rem;
+padding: 0 !important;
+height: 4rem;
 }
+
+.navbar-nav > li > a.nav-item, .navbar-nav > li> a.nav-item:focus{
+border-top: 0.1875rem solid var(--primaryNav);
+}
+
+.navbar-nav > li > a:hover{
+    border-top: 0.1875rem solid var(--primaryNav);
+}
+
+
+
+
+
+
