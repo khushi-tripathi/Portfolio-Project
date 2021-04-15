@@ -1,15 +1,30 @@
 
 :root{
     --primaryWhite : white;
-    --primaryNav : rgb(245, 59, 90);
+    --primaryNav : rgb(255 60 85);;
     --primaryDark : rgb(255, 255, 255, 0);
+    --main-button : rgb(165, 4, 4);
+    /* --main-button-hover : rgb(185, 1, 1); */
+
 }
 
+html{
+
+scroll-behavior: smooth;
+/* scroll-behavior: ; */
+
+}
 
 
 
 /****NAVBAR***/
 
+.head1{
+    color: #fa904a;
+}
+nav{
+    z-index: 2;
+}
 /* LOGO */
 .logo{
     width: 5.25rem;
@@ -32,18 +47,18 @@ nav ul li{
 .navbar-nav> li>a{
     margin-right: 0.75rem;
     margin-left: 0.75rem;
-color: var(--primaryWhite) !important;
-border-top: 0.1875rem solid var(--primaryDark) ;
+    color: var(--primaryWhite) !important;
+    border-top: 0.1875rem solid var(--primaryDark) ;
 }
 
 .navbar-brand{
-max-width: 17.25rem;
-padding: 0 !important;
-height: 4rem;
+    max-width: 17.25rem;
+    padding: 0 !important;
+    height: 4rem;
 }
 
 .navbar-nav > li > a.nav-item, .navbar-nav > li> a.nav-item:focus{
-border-top: 0.1875rem solid var(--primaryNav);
+    border-top: 0.1875rem solid var(--primaryNav);
 }
 
 .navbar-nav > li > a:hover{
@@ -52,6 +67,549 @@ border-top: 0.1875rem solid var(--primaryNav);
 
 
 
+/****HEADER***/
+
+.header-wrapper{
+    position: relative;
+    background: rgb(0, 0, 0, 0.7) url(brandon-romanchuk-R1Io5Eeh6sI-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgb(0, 0, 0); */
+/* opacity: 0.8; */
+background-blend-mode: darken;
+    height: 100vh;
+
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;
+text-align: center;
+color: var(--primaryNav);
+z-index: 1;
+/*for center btn typed stuff*/
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+
+}
+
+/* Typed text */
+
+.typed-text{
+    font-size: 2rem;
+    color: var(--primaryNav);
+}
+
+
+/* Header button */
+
+.main-btn{
+    border: 0.1rem solid var(--main-button);
+    text-transform: uppercase;
+    /* border-radius: 0.1rem; */
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color: var(--primaryWhite);
+    /* margin: 2rem; */
+    margin: 0;
+    margin-top: 1.25rem;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    background-color: var(--primaryNav);
+    color: black;
+    font-weight: bold;
+    /* border-width: 0.2rem; */
+    /* border-radius: 0.2rem; */
+}
 
 
 
+
+.tsparticles-canvas-el{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+
+
+/* Section */
+
+
+
+.sec{
+    /* margin-top: 1rem; */
+    padding: 4rem 0;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(0, 0, 0, 0.7); */
+}
+
+/* .imagg{
+ height: 30%;
+ width: 28%;   
+}
+ */
+/* .image-div{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid red;
+} */
+
+
+/* @media (min-width: 768px)
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 28%;
+} */
+
+/* 25rem;
+width: 20rem; */
+
+/* .about .title::after{
+    content: "";
+} */
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left .imagg{
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+    border-radius: 0.375rem;
+}
+.about .about-content .right{
+    width: 55%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: left; */
+    /* align-items: flex-start; */
+}
+.about .about-content .right .text{
+    font-size: 1.5625rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+}
+.about .about-content .right .text span{
+    color: var(--primaryNav);
+}
+.about .about-content .right p{
+    /* text-align: center; */
+    justify-content: left;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: var(--primaryNav);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.625rem 1.875rem;
+    margin-top: 1.25rem;
+    border-radius: 0.375rem;
+    border: 0.125rem solid var(--primaryDark);
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: var(--primaryNav);
+    border: 0.125rem solid var(--primaryNav);
+    background-color: black;
+    background: none;
+}
+ 
+
+.column{
+    margin-bottom: 1rem;
+}
+
+/* section{
+    padding: 100px 0;
+} */
+.max-width{
+    max-width: 81.25rem;
+    padding: 0 5rem;
+    margin: auto;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    position: relative;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 3.75rem;
+    padding-bottom: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+ .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 11.25rem;
+    height: 0.1875rem;
+    background: #111;
+    transform: translateX(-50%);
+}
+ .title::after{
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    font-size: 1.25rem;
+    color: var(--primaryNav);
+    padding: 0 0.3125rem;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+
+/* EDUCATION */
+
+.education{
+    /* display: flex; */
+    /* fl; */
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+
+
+.edu{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+    /* align-items: ; */
+    justify-content: space-evenly;
+    /* background-color: black; */
+    /* color: white; */
+    
+    
+}
+.i{
+    height: 20rem;
+    /* width: 20rem; */
+}
+.eduH{
+    height: 80vh;
+    width: 100vw;
+    
+}
+
+
+.cd{
+    width: 30rem;
+    /* height: 10rem; */
+}
+
+
+.heading{
+    text-align: center;
+    color: var(--primaryNav);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    /* margin-top: 1rem; */
+    margin-bottom: 2rem;
+}
+
+.blackbg{
+    background-color: black;
+}
+
+
+
+
+
+/* Experience */
+
+.Experience{
+height: 100vh;
+display: flex;
+/* justify-content: ; */
+flex-direction: column;
+/* padding-bottom: 2rem; */
+
+width: 100vw;
+
+}
+.heading2{
+    color: var(--primaryNav);
+    background-color: black;
+    text-align: center;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    margin: 0;;
+}
+
+
+.project{
+    /* border: 0.1rem solid red; */
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classh2{
+    text-decoration: underline;
+    color:var(--primaryNav);
+    padding: 2rem;
+    text-align: center;
+}
+.outerProjectDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 3rem;
+    
+}
+
+
+/* media */
+
+
+    @media (max-width: 1078px) { 
+        .about-content{
+            flex-direction: column;
+        }
+        .sec{
+            height: 160vh;
+        }
+
+        .left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+      
+        
+        .right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .about .about-content .right a{
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.6rem 1.7rem;
+            margin-top: 1rem;
+            align-items: center;
+        }
+    } 
+    
+    
+    
+    
+    @media (max-width: 997px) {  
+        
+        /* pic */
+        .about .about-content .left .imagg {
+            height: 15rem;
+            width: 15rem;
+        }    
+           
+        .sec{
+            height: 140vh;
+        }
+        
+        .para{
+            font-size: 0.8rem;
+        }
+        .education{
+            height: 120vh;
+            
+        }
+    }
+    
+    @media (max-width: 959px) {
+        
+        .education{
+            height: 200vh;
+            
+        }
+
+
+    }
+
+
+
+
+    @media (max-width: 653px) {
+        
+/* decrease Card size */
+.cd{
+    width: 20rem;
+    /* height: 10rem; */
+}
+.i{
+    height: 15rem;
+}
+
+.education{
+    height: 150vh;
+    
+}
+
+
+
+        /* font decrease */
+        .para, .card-text{
+            font-size: 0.6rem;
+        }
+.title{
+    font-size: 1.7rem; ;
+}
+
+.heading{
+    font-size: 1.7rem;
+}
+
+    .heading2{
+            font-size: 1.7rem;
+        }
+    
+        .classh2{
+            font-size: 1.3rem;
+        }
+.main-btn{
+    padding: 0.6rem 0.7rem 0.7rem 0.7rem;
+    color: var(--primaryWhite);
+    margin: 1rem;
+    font-size: 1rem;
+}    
+
+
+
+    }
+
+
+
+
+
+    
+    @media (max-width: 440px) {
+        
+        /* decrease Card size */
+        .cd{
+            width: 15rem;
+            /* height: 10rem; */
+        }
+        .i{
+            height: 10rem;
+        }
+        .sec{
+            height: 110vh;
+        }
+        
+        .outerProjectDiv {
+            height: 100vh;
+        }
+        
+        
+        
+        .education{
+            height: 120vh;
+            
+        }
+        
+        .about .about-content .right {
+            width: 100%;    
+        }
+        
+        
+        /* font decrease */
+        .para, .card-text{
+            font-size: 0.5rem;
+        }
+        
+        .title, .heading, .heading2{
+            font-size: 1.4rem;
+        }
+        
+        .classh2{
+            font-size: 1.1rem;
+        }
+        .main-btn{
+            padding: 0.5rem 0.6rem 0.6rem 0.6rem;
+            color: var(--primaryWhite);
+            margin: 0.7rem;
+            font-size: 0.7rem;
+        }    
+        
+        
+        /* pic */
+        
+        /* .about .about-content .left .imagg {
+            height: 10rem;
+            width: 10rem;
+            
+        } */
+    }
+    
+    
+    
+    @media (max-width: 384px) {
+
+        .sec{
+            height: 135vh;
+        }
+        
+        
+    }
+    @media (max-width: 234px) {
+
+
+
+    }
+    
+    
+    
+    /* Footer */
+    
+    
+    
+    .footerPara{
+        /* position: fixed; */
+        color: white;
+        /* margin-top: ; */
+    background-color: #060505d6;
+    /* background-color: brown; */
+    padding: 1rem;
+    text-align: center;
+margin-bottom: 0;;
+
+    /* background: rgb(255, 255, 255, 0); */
+}

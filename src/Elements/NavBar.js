@@ -3,7 +3,7 @@ import logo from "../logo.jpg";
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
         <div className="container">        
         
         <a className="navbar-brand" href="#"><img className="logo" src={logo} alt="no logo..."/></a>
@@ -15,16 +15,16 @@ const NavBar = () => {
           <ul className="navbar-nav ml-auto">
             
             <li className="nav-item">
-              <a className="nav-link" href="#">Home</a>
+              <a className="nav-link" href="">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About Me</a>
+              <a className="nav-link" href="#about">About Me</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Experience</a>
+              <a className="nav-link" href="#experience">Experience</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Education</a>
+              <a className="nav-link" href="#education">Education</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Contact</a>
