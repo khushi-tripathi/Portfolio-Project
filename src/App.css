@@ -292,7 +292,7 @@ width: 20rem; */
 .education{
     /* display: flex; */
     /* fl; */
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background-color: black;
 }
@@ -301,8 +301,10 @@ width: 20rem; */
 
 .edu{
     display: flex;
+    /* padding-bottom: 8rem; */
     flex-direction: row;
     width: 100vw;
+
     flex-wrap: wrap;
     /* align-items: ; */
     justify-content: space-evenly;
@@ -349,7 +351,7 @@ width: 20rem; */
 /* Experience */
 
 .Experience{
-height: 100vh;
+height: 120vh;
 display: flex;
 /* justify-content: ; */
 flex-direction: column;
@@ -541,7 +543,7 @@ width: 100vw;
         
         
         .education{
-            height: 120vh;
+            height: 130vh;
             
         }
         
@@ -569,13 +571,13 @@ width: 100vw;
             font-size: 0.7rem;
         }    
         
-        
+/*         
         .heading2{
             padding-top: 4rem;
         }
         .edu{
             padding-bottom: 4rem;
-        }
+        } */
         /* pic */
         
         /* .about .about-content .left .imagg {
@@ -596,21 +598,28 @@ width: 100vw;
             height: 11rem;
             width: 11rem;
         }
-        .heading2{
-            padding-top: 4rem;
+        /* .heading2{ */
+            /* padding-top: 4rem;
         }
         .edu{
             padding-bottom: 4rem;
+        } */
+        
+        
+    }
+    @media (max-width: 282px) {
+
+        .education{
+            height: 130vh;
+            
         }
-        
-        
-    }
-    /* @media (max-width: 234px) {
+        .sec{
+            height: 145vh;
 
-
+        }
 
     }
-     */
+    
     
     
     /* Footer */
