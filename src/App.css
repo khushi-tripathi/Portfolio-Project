@@ -570,6 +570,12 @@ width: 100vw;
         }    
         
         
+        .heading2{
+            padding-top: 4rem;
+        }
+        .edu{
+            padding-bottom: 4rem;
+        }
         /* pic */
         
         /* .about .about-content .left .imagg {
@@ -586,15 +592,25 @@ width: 100vw;
         .sec{
             height: 135vh;
         }
+        .imagg{
+            height: 11rem;
+            width: 11rem;
+        }
+        .heading2{
+            padding-top: 4rem;
+        }
+        .edu{
+            padding-bottom: 4rem;
+        }
         
         
     }
-    @media (max-width: 234px) {
+    /* @media (max-width: 234px) {
 
 
 
     }
-    
+     */
     
     
     /* Footer */

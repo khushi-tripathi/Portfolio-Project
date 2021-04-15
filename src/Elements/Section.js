@@ -1,5 +1,6 @@
 import React from 'react'
-import image from "../Khushi_Tripathi.jpeg";
+// import image from "../Khushi_Tripathi.jpeg";
+import image from "../khushi.jpeg";
 
 
 const Section = () => {
